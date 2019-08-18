@@ -1,4 +1,5 @@
-{
+var friendsArray = [
+  {
   "name":"Luisa",
   "photo":"https://unsplash.com/photos/4LXkBKBmgiA",
   "scores":[
@@ -126,3 +127,7 @@
     3
   ]
 }
+]
+
+
+module.exports = friendsArray;

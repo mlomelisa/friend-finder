@@ -1,9 +1,15 @@
-var path = require("path");
+
+var userData = require("../data/friends");
 
 module.exports = function(app) {
     // Redirect to Tables API page
   app.get('/api/friends', function (req,res){
-  res.sendFile(path.join(__dirname,'../data/friends.js'));
+  res.json(userData);
   });
+
+  app.post('/api/friends', function(req,res) {
+    userData.push(req.body);
+    res.json(true)
+  })
 
 }
