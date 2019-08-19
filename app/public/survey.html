@@ -259,6 +259,7 @@
 
         $.post('/api/Friends', userData, function(data) {
           $('#exampleModal').modal('show')
+          console.log(data)
         });
       } else {
         $('#missinginfomodal').modal('show');
